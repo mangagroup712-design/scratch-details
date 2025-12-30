@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    background-color: #001931;
+    font-family: "Zalando Sans Expanded", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 全体を画面中央に寄せるためのコンテナ */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 左右中央 */
+    min-height: 100vh;
+}
+
+#header {
+    position: relative;
+    flex-wrap: nowrap;         
+    padding: 0 20px;           
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background-color: #e2f0ff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin: 20px auto; 
+    width: 90%;
+    box-shadow: #abbaff 0px 0px 30px 5px;
+    border-radius: 10px;
+    font-weight: 900; 
+    font-size: 30px;
+    line-height: 1.8;
+}
+
+
+#search-bar {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+#username-input {
+    width: 0;
+    height: 30px;
+    opacity: 0;
+    border: none;
+    outline: none;
+    padding: 0;
+    transition: all 0.4s ease;
+    border-radius: 5px;
+    background: white;
+    font-size: 15px;
+    margin-right: 0px;
+    background-color: transparent;
+    box-shadow: 0px 0px 5px 0px #0019311a;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+#username-input.active {
+    width: 180px;
+    height: 30px;
+    opacity: 1;
+    padding: 5px 10px;
+    background-color: transparent;
+    outline: 1px solid #001931;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+#search-button {
+    width: 0;
+    height: 40px;
+    opacity: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    border: 0px;
+    background: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+#search-button.active {
+    width: auto;
+    height: 40px;
+    opacity: 1;
+    margin: 0px;
+    padding: 0px 10px;
+    background-color: transparent;
+    outline: 1px solid #001931;
+    transition: all 0.4s ease;
+    font-family: "Zalando Sans Expanded", sans-serif;
+}
+
+#search-open {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0px);
+    transition: filter 0.3s ease;
+}
+
+#search-open:hover {
+    filter: drop-shadow(0px 0px 10px #001931);
+}
+#search-button:hover {
+    background-color: #001931;
+    color: white;
+}
+
+
+#container {
+    opacity: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px auto;
+    background-color: #f0f8ff;
+    width: 90%;
+    box-shadow: #abbaff 0px 0px 30px 5px;
+    border-radius: 10px;
+    padding: 0px;
+}
+#container.appear{
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+#user-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px auto;
+    background-color: none;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+
+#user-icon {
+    flex: 0 0 270px; 
+    height: 270px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 35px;
+    box-shadow: 0px 0px 15px 20px #0019311a;
+}
+
+img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#user-detail {
+    flex: 1;
+    margin-left: 20px;
+    font-family: inherit;
+}
+
+p {
+    margin: 0;
+    line-height: 1;
+}
+
+a{
+    color: #7fc1ff;
+}
+
+
+#welcome{
+    gap: 50px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+}
