@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch Detail - Server Health</title>
+</head>
+<body>
+    <div id="header">
+        <button id="menu-btn" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <div class="title">scratch details</div>
+    </div>
+
+    <nav id="nav-menu">
+        <a href="Users.html" id="nav-users">Users</a>
+        <a href="ServerHealth.html" id="nav-serverhealth">Server Health</a>
+    </nav>
+
+    <div id="welcome">
+        <h1>Server Health</h1>
+        <p>Check the current status of Scratch servers.</p>
+    </div>
+
+    <div id="container-wrapper">
+        <div id="health-info">
+            <p id="status">Connecting...</p>
+        </div>
+    </div>
+
+    <script src="Serverhealth.js" defer></script>
+</body>
+</html>
