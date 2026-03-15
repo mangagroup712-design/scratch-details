@@ -1,4 +1,3 @@
-
 function toggleMenu() {
     document.getElementById('menu-btn').classList.toggle('open');
     document.getElementById('nav-menu').classList.toggle('open');
